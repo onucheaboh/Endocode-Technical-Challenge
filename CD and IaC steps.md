@@ -60,4 +60,3 @@ how to update? You can update any field of your chart, value.yaml, templates and
 And to reflect it in your cluster? It is even simpler, follow this:
 
 - helm upgrade template-chart .\template-chart-0.1.0.tgz -n helm
-
