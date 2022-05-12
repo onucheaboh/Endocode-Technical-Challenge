@@ -51,6 +51,6 @@ def create_app():
              host_ip=socket.gethostbyname(hostname),
              ip=request.remote_addr,
              git_hash=git_hash,
-             project_name='Python challenge')
+             project_name='Endocode-Technical-Challenge')
 
     return app
