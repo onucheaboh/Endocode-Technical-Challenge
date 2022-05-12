@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  selector: 
+   app: nginx
+
+  ports:
+    - name: http
+      port: 80
+    
+      nodePort: 30007
+  type: NodePort   
+
+#To debug the code i had to take out "type: NodePort". I also had to remove "wrong_" before nginx in line 8 of the original code. Then i had
+to add name:http below port and also change the port number from 81 to 80. I took out targetport as theres no target as to which port.
+Finally i added type below nodeport to specify the type 
