@@ -20,7 +20,7 @@ Step 3: Install the requirements
 $ make setup
 
 Step 4: Run the Tests
-$ python tests.py
+$ python Unit-Test.py
 
 Step 5: Start the development server
 $ make run
